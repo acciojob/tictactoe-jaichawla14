@@ -1,13 +1,4 @@
 const submitBtn = document.getElementById("submit");
-const inputScreen = document.getElementById("input-screen");
-const gameScreen = document.getElementById("game-screen");
-const msg = document.querySelector(".message");
-const boardDiv = document.querySelector(".board");
-
-
-let p1 = "", p2 = "";
-let turn = "X";
-let currentPlayer = "";
 let cells = [];
 
 
@@ -19,8 +10,8 @@ const winPatterns = [
 
 
 submitBtn.addEventListener("click", () => {
-p1 = document.getElementById("player-1").value.trim();
-p2 = document.getElementById("player-2").value.trim();
+p1 = document.getElementById("player1").value.trim();
+p2 = document.getElementById("player2").value.trim();
 if (!p1 || !p2) return alert("Enter both names");
 
 
